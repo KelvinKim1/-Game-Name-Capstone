@@ -1,0 +1,250 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Ps4",
+            "id": "ed0701e4-1e4d-480a-9ad6-b479a20929e0",
+            "actions": [
+                {
+                    "name": "buttonSouth",
+                    "type": "Button",
+                    "id": "a06c7982-bd7a-4642-b75e-eac3524098f5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "leftStick",
+                    "type": "PassThrough",
+                    "id": "25c720bd-3985-4e9c-8728-44f5b8be9662",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "buttonEast",
+                    "type": "Button",
+                    "id": "8b40a755-0558-4e9b-b375-56ee7add1271",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "rightTrigger",
+                    "type": "Button",
+                    "id": "09e78da3-478e-4aec-b219-3d79222c7989",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4166204f-56e5-4035-acbd-42fce37b182d",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Ps4",
+                    "action": "buttonSouth",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "63fdb8bd-8b29-40a3-bcb3-b6b2de8948be",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "leftStick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b6a25316-7f7f-4397-8242-9cf51f8d06f4",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "buttonEast",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9018b896-53d7-4e01-99f9-31d5659f76fb",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "rightTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Keyboard",
+            "id": "c8300afc-1137-4f47-ae12-936148476526",
+            "actions": [
+                {
+                    "name": "W",
+                    "type": "Button",
+                    "id": "e78fc7e8-7c25-412b-ae17-3e4f2e63caf4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "A",
+                    "type": "Button",
+                    "id": "a332bf88-472f-4c81-a8c8-01843f73c110",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "S",
+                    "type": "Button",
+                    "id": "dd83621a-a8fa-484a-bf49-65dc5716210c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "D",
+                    "type": "Button",
+                    "id": "ff6da4de-9bce-40f0-ae38-e1dae382f8ab",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Space",
+                    "type": "Button",
+                    "id": "796841f8-9ed6-4aa4-96ed-04acdeeed83b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "E",
+                    "type": "Button",
+                    "id": "431fc95a-0178-4e56-aa05-7af68236b446",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Q",
+                    "type": "Button",
+                    "id": "888b0df7-8e7a-48b1-bc83-9dde6e7e5a56",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Tab",
+                    "type": "Button",
+                    "id": "52d38032-ec9c-40b2-8eb1-063b378adfee",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "51645d11-268f-4a35-bba5-6b9a29ee56c3",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "W",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fe66b118-1d93-4796-86d4-01bf316f6337",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "A",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74b35214-56cb-48b9-97f8-103c1f770517",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "S",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f6130298-b996-415e-af50-d1c42d012f10",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "D",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "995a86ff-63ad-4619-80dc-54d232914d1a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Space",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc7f0b3a-d8ae-4acc-b521-b0ad59d18151",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "E",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "56c5105e-1220-4bb0-ab64-ec1e578b5931",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Q",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d17d26fc-d6c8-4982-ba04-23fc20be05ca",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
