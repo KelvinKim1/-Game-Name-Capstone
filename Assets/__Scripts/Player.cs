@@ -20,6 +20,7 @@ public class Player : BoxActor
     AudioSource LandSFX;
     AudioSource DashSFX;
     AudioSource FootstepSFX;
+    Rigidbody2D rb;
 
     int health = 100;
     int totalHealth = 100;
@@ -41,6 +42,7 @@ public class Player : BoxActor
     {
         DontDestroyOnLoad(this);
         s = this;
+        
         //particle awake change with own class later
         softLand = GameObject.Find("SoftLand");
         softLandPS = softLand.GetComponent<ParticleSystem>();
@@ -70,8 +72,15 @@ public class Player : BoxActor
         LandSFX = transform.GetChild(4).GetComponent<AudioSource>();
         FootstepSFX = transform.GetChild(5).GetComponent<AudioSource>();
 
-
+        // rigidbody physics
+        rb = GetComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+        boxCollider.edgeRadius = 1; // fixes player getting stuck in moving objects
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -1513,10 +1522,42 @@ public class Player : BoxActor
         {
             Gizmos.DrawWireCube((Vector2)transform.position + attackBoxOffset, attackBox);
         }
-        
-        
     }
-    //GayDicks
+    
+    #endregion
+ 
+    #region platformCollision
+    private bool isOnPlatform;
+
+    private void OnCollisionStay2D(Collision2D col)
+    {
+        //Debug.Log("collided");
+        //Debug.Log(System.Object.ReferenceEquals(s, null));
+        //Debug.Log(GameObject.Find("DontDestroyOnLoad"));
+
+        if(col.gameObject.CompareTag("Platform"))
+        {
+            isOnPlatform = true;
+            s.transform.SetParent(col.collider.transform);
+        }
+    }
+    
+ 
+    private void OnCollisionExit2D(Collision2D col)
+    {
+        if(isOnPlatform && col.gameObject.CompareTag("Platform")) //col.gameObject.tag == "Platform")
+        {
+            isOnPlatform = false;
+
+            s.transform.SetParent(null);
+            DontDestroyOnLoad(s);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        rb.MovePosition(transform.position + transform.forward * Time.deltaTime);
+    }
     
     #endregion
 

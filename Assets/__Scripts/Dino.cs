@@ -174,9 +174,9 @@ public class Dino : Enemy
 
     private const float MaxFall= -440;
     private const float ChangeTime = 4f;
-    private const float WalkSpeed = 36f;
-    private const float RunSpeed = 100f;
-    private const float RunAccel = 240f;
+    private const float WalkSpeed = 70;
+    private const float RunSpeed = 175f;
+    private const float RunAccel = 400f;
     private const float WalkAccel = 80f;
     private const float AttackHeight = 15f;
     private const float LaunchedCheck = 500;
